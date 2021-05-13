@@ -834,7 +834,7 @@ body {
   flex-wrap: wrap;
   margin: -15px;
 }
-.card-link {
+.card-set__link {
   display: block;
   /* анимация Образцы работ portfolio cards */
   transition-property: box-shadow;
@@ -843,22 +843,22 @@ body {
   transition-delay: 0;
 }
 
-.card-link:hover,
-.card-link.k:focus {
+.card-set__link:hover,
+.card-set__link:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
   /* transform: translateY(0); */
 }
 
-.card-link:hover .thumb-text,
-.card-link.k:focus .thumb-text {
+.card-set__link:hover .card-set__text,
+.card-set__link:focus .card-set__text {
   transform: translateY(0);
 }
 
-.card-thumb {
+.card-set__thumb {
   position: relative;
   overflow: hidden;
 }
-.thumb-text {
+.card-set__float {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -873,7 +873,7 @@ body {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.thumb-desc {
+.card-set__float-desc {
   display: block;
   margin-top: 0;
   margin-bottom: 0;
@@ -883,33 +883,33 @@ body {
   line-height: 1.56;
   color: var(--white-text-color);
 }
-.card-thumb:hover .thumb-text {
+.card-set__thumb:hover .card-set__float {
   transform: translateY(0);
 }
 
-.card-item {
+.card-set__item {
   margin-left: 15px;
   margin-top: 15px;
   margin-right: 15px;
   margin-bottom: 15px;
 }
-.img-card {
+.card-set__img {
   display: block;
   max-width: 100%;
   height: auto;
 }
-.portfolio-content {
+.card-set__content {
   padding: 20px 24px;
   border: 1px solid #eeeeee;
 }
-.portfolio-title {
+.card-set__title {
   margin-top: 0;
   margin-bottom: 0;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
 }
-.portfolio-text {
+.card-set__desc {
   margin-top: 0;
   margin-bottom: 0;
   font-size: var(--secondary-font-size);
