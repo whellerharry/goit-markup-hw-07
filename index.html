@@ -515,61 +515,63 @@
         </div>
       </div>
     </footer>
+    <!-- Модальное окно -->
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
-        <button • data-modal-close class="hero-button-close">
-          <svg class="close-x">
+        <button • data-modal-close class="modal__btn-close">
+          <svg class="modal__close-x">
             <use href="./images/icons/sprite.svg#close-x"></use>
           </svg>
         </button>
         <!-- Форма на модалке -->
-        <p class="modal-title">Оставьте свои данные, мы вам перезвоним</p>
+        <p class="modal__head">Оставьте свои данные, мы вам перезвоним</p>
         <form class="modal-form">
-          <div class="label-text-input">
-            <label class="modal-label">
+          <div class="modal__text-input">
+            <label class="modal__label">
               Имя<input
                 type="text"
                 name="name"
-                class="modal-input"
+                class="modal__input"
                 required
                 minlength="4"
                 maxlength="20"
                 autocomplete="name"
               />
-              <svg class="input-icon">
+              <svg class="modal__input-icon">
                 <use href="./images/icons/sprite.svg#user-icon"></use>
               </svg>
             </label>
-            <label class="modal-label">
-              Телефон<input type="phone" name="phone" class="modal-input" required autocomplete="tel" />
-              <svg class="input-icon">
+            <label class="modal__label">
+              Телефон<input type="phone" name="phone" class="modal__input" required autocomplete="tel" />
+              <svg class="modal__input-icon">
                 <use href="./images/icons/sprite.svg#phone-icon"></use>
               </svg>
             </label>
-            <label class="modal-label">
-              Почта<input type="email" name="email" class="modal-input" required autocomplete="email" />
-              <svg class="input-icon">
+            <label class="modal__label">
+              Почта<input type="email" name="email" class="modal__input" required autocomplete="email" />
+              <svg class="modal__input-icon">
                 <use href="./images/icons/sprite.svg#email-icon"></use>
               </svg>
             </label>
-            <label class="modal-label"
+            <label class="modal__label"
               >Комментарий
-              <textarea name="comment" class="modal-comment" placeholder="Введите текст"></textarea>
+              <textarea name="comment" class="modal__comment" placeholder="Введите текст"></textarea>
             </label>
           </div>
           <!-- Чекбокс -->
-          <label class="check-label">
-            <input type="checkbox" name="terms-agreement" class="modal-check" />
-            <span class="check-box"></span>
+          <label class="modal__check-label">
+            <input type="checkbox" name="terms-agreement" class="modal__check" />
+            <span class="modal__check-box"></span>
             <span>
               Соглашаюсь с рассылкой и принимаю
-              <a href="" class="modal-link link">Условия договора</a>
+              <a href="" class="modal__link link">Условия договора</a>
             </span>
           </label>
-
-          <button type="submit" class="submit-button">Отправить</button>
+          <!-- кнопка Отправить -->
+          <button type="submit" class="modal__submit-btn">Отправить</button>
         </form>
       </div>
+      <!-- end of Модальное окно -->
     </div>
     <script src="./js/modal.js"></script>
   </body>
