@@ -1,20 +1,8 @@
 /* Преимущества advantages section */
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  white-space: nowrap;
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-}
-
 .advantages__list {
   display: flex;
 }
+
 .advantages__item {
   margin-top: 0;
   margin-bottom: 0;
@@ -27,6 +15,7 @@
   width: 70px;
   height: 70px;
 }
+
 .advantages__icons {
   display: flex;
   justify-content: center;
@@ -39,6 +28,7 @@
   background-color: #f5f4fa;
   border-radius: 4px;
 }
+
 .advantages__title {
   margin-top: 0;
   margin-bottom: 10px;
@@ -46,6 +36,7 @@
   font-weight: var(--title-font-weight);
   text-transform: uppercase;
 }
+
 .advantages__text {
   margin-top: 0;
   margin-bottom: 0;
